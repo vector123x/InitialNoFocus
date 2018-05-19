@@ -1,0 +1,22 @@
+{
+  "name": "初始状态禁止获得焦点",
+  "description": "有一部分网站加载完成后，焦点会落在搜索框，对于使用 Chrome Vimium 插件的用户就有一个困扰，每次都需要按 ESC 键让输入框失去焦点进入正常模式。为此，写了一个 Chrome 插件，网页加载结束后，让输入框失去焦点。目前适配了百度百科、淘宝网站。",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "120": "icon_120.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://baike.baidu.com/*",
+        "*://www.taobao.com/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
