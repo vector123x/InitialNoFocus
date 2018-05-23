@@ -4,4 +4,4 @@ setTimeout(function() {
 		focusedElement.blur();
 	}
 	console
-}, 100);
+}, 300);

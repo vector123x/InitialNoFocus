@@ -12,7 +12,7 @@
     {
       "matches": [
         "*://baike.baidu.com/*",
-        "*://www.taobao.com/*"
+        "*://*.taobao.com/*"
       ],
       "js": [
         "main.js"
